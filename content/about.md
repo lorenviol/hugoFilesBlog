@@ -1,16 +1,17 @@
 ---
-title: "About Me" # in any language you want
-# url: "/about"
-# description: "About Me"
-summary: "about"
+title: About Me
+summary: about
 comments: false
 hidemeta: true
 ShowReadingTime: false
 searchHidden: true
 disableShare: true
 ShowBreadCrumbs: false
+
 ---
-![avatar](/images/avatar.jpg)Hi I’m Lorenzo (you can call me loren)🤗,
+![avatar](/images/avatar.jpg)
+
+Hi I’m Lorenzo (you can call me loren)🤗,
 
 I’m a travel photographer / video maker / freelancer most of the time. I love everything: simple, pure and minimal, that is close to perfection. One of the companies that I admire the most for that is Apple, and yes I even got it tattooed on my wrist 😆.
 
@@ -25,5 +26,5 @@ I now use an iPhone X as my main handy camera, I bring it literally everywhere w
 I’m a pretty sociable person 🫂 (online, or not in a group), so if you do have any: questions, inquiries, or even if you just want to say hi 👋, I’d be very glad to reach you back as soon as I can.
 
 Hope you’ll enjoy my pictures,
-  Love ya,
-  Lorenzo.
+Love ya,
+Lorenzo.
