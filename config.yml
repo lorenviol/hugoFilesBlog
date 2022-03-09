@@ -1,0 +1,153 @@
+baseURL: https://lorenzoviol.one/
+languageCode: en-us
+title: lorenzoviolone
+paginate: 10
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-29623401-3
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: lorenzoviolone
+    description: "Lorenzo Viola"
+    keywords: [Blog, Portfolio, PaperMod, Photos, Photography, Personal Blog, Lifestyle]
+    author: Lorenzo Viola
+    # author: ["Me", "You"] # multiple authors
+    images: ["images/avatar.jpg"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: true
+    hidemeta: false
+    hideSummary: true
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/favicons/favicon.ico"
+        favicon16x16: "/favicons/favicon-16x16.png"
+        favicon32x32: "/favicons/favicon-32x32.png"
+        apple_touch_icon: "/favicons/apple-touch-icon.png"
+        safari_pinned_tab: "/favicons/safari-pinned-tab.svg"
+
+    label:
+        text: "@lorenzoviolone"
+        icon:   ""
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: true # needs to be explicitly set
+        title: Lorenzo Viola
+        #subtitle: "\U0001F44B \U0001F3F3\uFE0F\u200D\U0001F308"
+        imageUrl: "images/avatar.jpg"
+        imageWidth: 160
+        imageHeight: 160
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Gallery
+              url: "http://photos.lorenzoviol.one/"
+            - name: About
+              url: about
+
+    # home-info mode
+    homeInfoParams:
+        #Title: "Hi there \U0001F44B"
+        #Content: Welcome to my blog
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/lorenzoviolone"
+        - name: instagram
+          url: "https://instagram.com/lorenzoviolone"
+        - name: telegram
+          url: "https://t.me/lorenzoviolone"
+        - name: reddit
+          url: "https://reddit.com/user/lorenzoviolone"
+        - name: youtube
+          url: "https://youtube.com/lorenzoviolone"
+        - name: lastfm
+          url: "https://www.last.fm/user/lorenzoviolone"
+        - name: snapchat
+          url: "https://snapchat.com/add/lorenzoviolone"
+        - name: twitch
+          url: "https://twitch.tv/lorenzoviolone"
+        - name: email
+          url: "mailto:mail@lorenzoviol.one"
+
+    analytics:
+        google:
+            SiteVerificationTag: "UA-29623401-3"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: false # hide on single page
+        linkFullImages: false
+        responsiveImages: false #set to false to reduce HTML5 photo gen. time
+
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content", "tags"]
+        
+menu:
+    main:
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 10
+        - identifier: archives
+          name: archive
+          url: /archives/
+          weight: 20
+        - identifier: search
+          name: search
+          url: /search/
+          weight: 30
+        - name: photos
+          url: "http://photos.lorenzoviol.one/"
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        style: monokai
